@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins-Regular'), url('./assets/fonts/Poppins-Font/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+ 
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins-Light'), url('./assets/fonts/Poppins-Font/Poppins-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins-Medium'), url('./assets/fonts/Poppins-Font/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins-Bold'), url('./assets/fonts/Poppins-Font/Poppins-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins-SemiBold'), url('./assets/fonts/Poppins-Font/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+
+@font-face {
+  font-family: 'SourceSansPro';
+  src: local('SourceSansPro-Regular'), url('./assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro';
+  src: local('SourceSansPro-Light'), url('./assets/fonts/Source_Sans_Pro/SourceSansPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro';
+  src: local('SourceSansPro-ExtraLight'), url('./assets/fonts/Source_Sans_Pro/SourceSansPro-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro';
+  src: local('SourceSansPro-Bold'), url('./assets/fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro';
+  src: local('SourceSansPro-SemiBold'), url('./assets/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'OpenSans';
+  src: local('OpenSans-Regular'), url('./assets/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: local('OpenSans-Bold'), url('./assets/fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: local('OpenSans-Light'), url('./assets/fonts/Open_Sans/static/OpenSans/OpenSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: local('OpenSans-SemiBold'), url('./assets/fonts/Open_Sans/static/OpenSans/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
