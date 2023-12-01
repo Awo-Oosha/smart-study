@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React from 'react'
 import styled from 'styled-components';
 
 
@@ -36,14 +36,7 @@ const Burger = styled.div`
   }
 `;
 
-const Hamburger = ({toggleNav}) => {
-
-  const [isActive, setIsActive] = useState(false);
-
-  const handleToggle = () => {
-    setIsActive(!isActive);
-    toggleNav()
-  };
+const Hamburger = ({handleToggle, isActive}) => {
 
   return (
     <Burger active={isActive} onClick={handleToggle}>

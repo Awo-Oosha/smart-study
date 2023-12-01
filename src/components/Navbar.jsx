@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container } from '../styles';
 import { Nav_Data } from '../constants';
 import styled from 'styled-components';
@@ -191,11 +191,18 @@ const MobileNav = styled.nav`
 const Navbar = () => {
 
   const [navToggle, setNavToggle] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
-
-  const handleNaw = () => {
+  const handleNav = () => {
+    setIsActive(!isActive);
     setNavToggle(!navToggle)
   }
+
+    useEffect(() => {
+    if(!navToggle && isActive) {
+      setIsActive(!isActive)
+    } 
+  }, [navToggle])
 
   return (
     <Header>
@@ -232,7 +239,7 @@ const Navbar = () => {
           </NavActions>
         </Nav>
 
-        <Hamburger  toggleNav={handleNaw}/>
+        <Hamburger isActive={isActive} handleToggle={handleNav} />
 
         <MobileNav active={navToggle}>
           <ul>
