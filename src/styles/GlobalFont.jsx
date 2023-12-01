@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
   --color-primary: #004AE2;
   --color-secondary: #000;
   --color-background: #EDF3FF;
-  --color-gray: #404040CC;
+  --color-gray: #BDBDBD;
   --color-white: #FFFFFF;
 
 
@@ -27,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     width: 100vw;
     min-height: 100vh;
+    overflow-x: hidden;
   }
 
   a {
