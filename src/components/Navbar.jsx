@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Container } from '../styles';
 import { Nav_Data } from '../constants';
 import styled from 'styled-components';
 import { Logo } from '../assets';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Hamburger from './Hamburger';
 
 const Header = styled.header`
@@ -148,13 +148,15 @@ const NavActions = styled.div`
 
 const MobileNav = styled.nav`
   position: fixed;
-  right: ${(props) => (props.active ? "0" : "-100%")};
+  left: 0;
   top: 70px;
-  min-height: 100vh;
-  border-left: 4px solid var(--color-primary);
+  width: 100vw;
+  min-height: fit-content;
   background-color: var(--color-background);
   transition: all 0.5s ease;
   z-index: 1;
+  padding: 20px 0;
+  display: ${(props) => (props.active ? "block" : "none")};
 
 
   ul {
@@ -172,7 +174,7 @@ const MobileNav = styled.nav`
       font-weight: 600;
       line-height: 28px;
       letter-spacing: -0.32px;
-      padding: 12px 30px;
+      padding: 12px 35px;
 
       a {
         margin: 0;
@@ -192,17 +194,24 @@ const Navbar = () => {
 
   const [navToggle, setNavToggle] = useState(false);
   const [isActive, setIsActive] = useState(false);
+  const navigate = useNavigate()
 
   const handleNav = () => {
     setIsActive(!isActive);
     setNavToggle(!navToggle)
   }
 
-    useEffect(() => {
+  useEffect(() => {
     if(!navToggle && isActive) {
       setIsActive(!isActive)
     } 
   }, [navToggle])
+
+  const goToRegister = () => {
+    navigate('/register')
+    setNavToggle(!navToggle);
+  }
+
 
   return (
     <Header>
@@ -232,7 +241,7 @@ const Navbar = () => {
               <p>LogIn</p>
             </div>
             <div>
-              <button>
+              <button onClick={goToRegister}>
                 Register
               </button>
             </div>
@@ -255,7 +264,7 @@ const Navbar = () => {
               <p>LogIn</p>
             </div>
             <div>
-              <button>
+              <button onClick={goToRegister}>
                 Register
               </button>
             </div>
